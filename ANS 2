@@ -1,0 +1,32 @@
+def counting(a):
+    
+    l_c={}
+    w=s.split()
+    for word in w:
+        for l in word:
+            if l in l_c:
+                l_c[l]+=1
+            else:
+                l_c[l]=1
+                      
+    return l_c
+
+def wordss(s):
+    
+    w_c={}
+    w=s.split()
+    for word in w:
+         if l in w_c:
+            w_c[l]+=1
+         else:
+            w_c[l]=1
+              
+                          
+    return w_c
+
+s="helo world"
+l_c=counting(s)
+b=wordss(s)
+for l,c in l_c.items():
+    print(f'{l}:{c}')
+
