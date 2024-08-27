@@ -1,0 +1,17 @@
+def reverse(a):
+    
+    words =a.split()
+    
+    
+    rever = words[::-1]
+    
+   
+    c = [word.capitalize() for word in rever]
+    result = ' '.join(c)
+    
+    return result
+
+
+a = "The Ganges is the longest river in India while The Nile in World"
+output = reverse(a)
+print(output)
